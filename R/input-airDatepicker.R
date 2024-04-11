@@ -469,7 +469,7 @@ updateAirDateInput <- function(session = getDefaultReactiveDomain(),
     show = isTRUE(show),
     hide = isTRUE(hide)
   ))
-  session$sendInputMessage(inputId, message)
+  session$sendInputMessage(session$ns(inputId), message)
 }
 
 
